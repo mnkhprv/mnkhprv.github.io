@@ -1,264 +1,191 @@
-
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
-
-.header{
-    background-color: #1b1b6c;
-    color: white;
-    text-align: left;
-    padding: 10px 20px;
-}
-
-.jumbotron {
-    background-color: #13124f;
-    color: white;
-    padding: 40px 20px;
-    text-align: left;
-}
-
-.jumbotron h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-.jumbotron p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.jumbotron .btn {
-    background-color: #ff0057;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;    
-}
-
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 20px auto;
+    background-image: url("Screenshot 2024-10-07 001105.png");
+    background-color: rgb(173, 216, 230);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
-
-
-.content {
-    display: flex;
-    gap: 20px;
-}
-
-
-.left-column {
-    width: 65%;
-}
-
-.left-column h2 {
-    font-size: 30px;
-    margin-bottom: 15px;
-}
-
-.left-column p {
-    line-height: 20px;
-    margin-bottom: 20px;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-.video {
+.container{
+    position: relative;
     width: 100%;
-    height: auto;
-    border: none;
-    margin-bottom: 20px;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
-.alert {
-    background-color: #9090A5;
-    color: white;
-    padding: 10px;
-    font-weight: bold;
 }
-
-
-.right-column {
-    width: 30%;
+.profileText .imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
 }
-
-.material-symbols-outlined{
-display: inline-flex;
-vertical-align: middle;
+.profileText .imgBx img{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
-.messages{
-    background-color: #f61067;
-    color: white;
+.profileText h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
     text-align: center;
-    border: none;
-    width: 100%;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+
+}
+.contactInfo{
+    padding-top: 40px;
+}
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo ul{
+    position: relative;
+}
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
     cursor: pointer;
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 20px;
+    font-size: 15px;
+    color: #03a9f4;
+}
+.contactInfo ul li span{
+    color: #fff;
+    font-weight: 300;
+}
+.Education{
+    padding-top: 30px;
+}
+.Education ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.Education h5{
+    color: #03a9f4;
+    font-weight: 500;
     font-size: 1em;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
-.messages .msg{
-    background-color: #f61067;
-    color: white;
-    padding: 0px;
-    text-decoration: none;
-    font-size: 1em;
+.Education h4{
+    color: #fff;
+    font-weight: 300;
 }
-
-
-.welcome-panel h3 {
-    color: white;
-    background-color: #9090A5;
-    margin-top: 10px;
-    padding: 10px;
+.contactInfo.language .percente{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #000;
+    display: block;
+    margin-top: 5px;
 }
-.welcome-panel p{
-    color: white;
-    font-size: small;
-    text-align: center;
-    margin-top: 10px;
+.contactInfo.language .percente div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
 }
-.welcome-panel{
-    background-color: #13124f;
-
+.container .left-side{
+    position: relative;
+    background-color: #003147;
+    padding: 40px;
 }
 
-.welcome-panel input[type="text"] {
-    padding: 10px;
-    margin-left: 15%;
-    margin-top: 10px;
+.container .right-side{
+    position: relative;
+    background-color: #fff;
+    padding: 40px;
+}
+.about{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0x;
+}
+.title2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     margin-bottom: 10px;
-    margin-right: 15%;
-    border: white;
-    background-color: #1b1b6c;
-    width: 65%;
 }
-.right-footer {
-    background-color: #352ba5;
-    padding: auto;
-    padding: 5px;
+p{
+    color: #333;
+    text-align: justify;
 }
-.right-footer .link{
-    color: white;
-    text-align: center;
-    margin: 10px;
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year_company{
+    min-width: 150px;
+}
+.about .box .year_company h5{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+.about .box .text h4{
+    text-transform: uppercase;
+    color: #03a9f4;
+    font-size: 16px;
+}
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr; 
+    justify-content: center;
+    align-items: center;
+}
+.skills h4{
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
     
 }
-
-.send-btn {
-    background-color: #ff0057;
-    color: white;
-    padding: 10px;
-    margin-left: 15%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 15%;
-    border-radius: 5px white;
-    width: 70%;
-    cursor: pointer;
+.skills .perc{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
 }
-
-.vote-panel{
-    margin-top: 10px;
-    border-radius: 5px;
-    background-color: wheat;
-
+.skills .perc div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
 }
-.vote-panel h3 {
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.vote-btn {
-    padding: 10px;
-    border: none;
-    color: white;
-    cursor: pointer;
-    font-size: 1em;
-    margin: 5px;
-    border-radius: 5px;
-}
-
-.vote-btn.cool {
-    background-color: #4caf50;
-}
-
-.vote-btn.lame {
-    background-color: #d9534f;
-}
-
-.progress-bar {
-    display: flex;
-    height: 20px;
-    border-radius: 5px;
-    overflow: hidden;
-    background-color: #ddd;
-    margin-top: 10px;
-}
-
-.progress {
-    text-align: center;
-    color: white;
-    font-size: 0.9em;
-    line-height: 20px;
-}
-
-.cool-progress {
-    background-color: #4caf50;
-}
-
-.lame-progress {
-    background-color: #d9534f;
-}
-
-
-footer {
-    background-color: #1a1a5e;
-    color: white;
-    text-align: left;
-    padding: 15px 0;
-    margin-top: 20px;
-    padding-left: 20px;
-}
-
-@media screen and (min-width: 1200px){
-    .container{
-        flex-direction: row;
-    }
-}
-
-@media screen and (max-width: 1199px) and (min-width: 768px){
-    .container .content{
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .right-column {
-        flex: 1 1 calc(50% - 20px);
-        width: 100%;
-    }
-    .left-column {
-        flex: 1 1 calc(50% - 20px);
-        width: 100%;
-    }
-}
-@media screen and (max-width: 768px) {
-    .container .content {
-      flex-direction: column;
-    }
-    .right-column {
-        width: 100%;
-        flex: 1 1 100%; 
-    }
-    .left-column {
-        flex: 1 1 100%; 
-        width: 100%;
-      }
-  }
