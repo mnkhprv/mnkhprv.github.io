@@ -1,0 +1,32 @@
+[
+  {
+    "id": "place_1",
+    "name": "Central Coffee",
+    "lat": 47.918,
+    "lng": 106.917,
+    "address": "Main St, Ulaanbaatar",
+    "category": "Cafe",
+    "rating": 4.5,
+    "phone": "+976-11-123456"
+  },
+  {
+    "id": "place_2",
+    "name": "National Museum",
+    "lat": 47.915,
+    "lng": 106.918,
+    "address": "Museum Ave, Ulaanbaatar",
+    "category": "Museum",
+    "rating": 4.7,
+    "phone": ""
+  },
+  {
+    "id": "place_3",
+    "name": "Sky Tower Restaurant",
+    "lat": 47.92,
+    "lng": 106.92,
+    "address": "Sky St, Ulaanbaatar",
+    "category": "Restaurant",
+    "rating": 4.3,
+    "phone": "+976-11-654321"
+  }
+]
