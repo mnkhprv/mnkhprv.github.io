@@ -1,0 +1,89 @@
+{
+  "document": {
+    "name": "Pinpoint Figma Spec",
+    "frames": [
+      {
+        "id": "onboarding",
+        "name": "Onboarding",
+        "w": 390,
+        "h": 844,
+        "elements": [
+          "slide1",
+          "slide2",
+          "slide3"
+        ]
+      },
+      {
+        "id": "home_map",
+        "name": "Home Map",
+        "w": 390,
+        "h": 844,
+        "elements": [
+          "map",
+          "search",
+          "fab",
+          "bottomsheet"
+        ]
+      },
+      {
+        "id": "search_results",
+        "name": "Search Results",
+        "w": 390,
+        "h": 844,
+        "elements": [
+          "list"
+        ]
+      },
+      {
+        "id": "place_detail",
+        "name": "Place Detail",
+        "w": 390,
+        "h": 844,
+        "elements": [
+          "hero",
+          "info",
+          "actions"
+        ]
+      },
+      {
+        "id": "itinerary_editor",
+        "name": "Itinerary Editor",
+        "w": 390,
+        "h": 844,
+        "elements": [
+          "stops_list",
+          "date_picker",
+          "optimize_btn"
+        ]
+      },
+      {
+        "id": "profile",
+        "name": "Profile",
+        "w": 390,
+        "h": 844,
+        "elements": [
+          "signin",
+          "settings",
+          "cache_manager"
+        ]
+      }
+    ],
+    "colors": {
+      "primary": "#1E90FF",
+      "secondary": "#00A86B",
+      "accent": "#FFCC00"
+    },
+    "typography": {
+      "font": "Inter",
+      "sizes": {
+        "headline": 24,
+        "title": 18,
+        "body": 14
+      }
+    },
+    "tokens": {
+      "spacing": 8,
+      "radius": 12
+    }
+  }
+}
